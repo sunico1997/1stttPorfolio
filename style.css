@@ -1,0 +1,179 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  
+}
+
+body{
+    background-color: #F6FFDE;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+    
+
+.container1{
+    list-style: none;
+    text-decoration: none;
+    background: #87805E;
+    text-align: center;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content:center ;
+}
+
+
+.items{
+    padding: 0px;
+    padding-top: 10px;
+    text-align: center;
+
+    
+    
+}
+
+ .items a{
+    position: relative;
+    text-decoration: none;
+    font-family: sans-serif;
+    color: #a0a0a0;
+    letter-spacing: .5px;
+    padding: 0 20px;
+    text-align: center;
+    
+}
+
+.items a:after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0,3s;
+
+}
+
+
+a:hover{
+    color: white;
+}
+
+a:hover:after{
+width: 100%;
+}
+
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background-image: url(./Image/pexels-stephan-seeber-1261728.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0% 100%  ;
+    margin-top: 20px;   
+    font-size: 30px;
+    border-block: 100px;
+    color: white;
+    padding: 3vh;
+    margin-left: 0%;
+    margin-right: 0%;
+    padding-top: 50vh   
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+  }
+
+.grid-wrapper > div{
+
+display: flex;
+justify-content: center;
+align-items: center;
+transition: 1s;
+}
+
+
+.grid-wrapper > div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px  ;
+}
+
+
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+
+}
+
+.grid-wrapper .wide{
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall{
+grid-row: span 2;
+
+}
+
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row:  span 2;
+}
+
+.grid-wrapper :hover{
+    opacity: 1;
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+ nav header{
+
+    margin-bottom: 20px;
+}
+
+.class{
+ font-family: "Sigmar"; 
+font-size: 70px;
+}
+
+.info{
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: "Press Start 2P  "; 
+}
+
+
+.socialmedia{
+    transition: all 0.3s;
+    font-size: 30px;
+}
+
+
+.socialmedia :hover{
+    font-size: 50px;
+}
+
+
+.fotterbottom{
+    background-color: #87805E;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
